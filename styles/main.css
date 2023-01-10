@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Questa Sans Regular";
+    src: url("../fonts/QuestaSans-Regular.otf");
+}
+
+@font-face {
+    font-family: "Questa Sans Medium";
+    src: url("../fonts/QuestaSans-Medium.otf");
+}
+
+@font-face {
+    font-family: "Questa Sans Bold";
+    src: url("../fonts/QuestaSans-Bold.otf");
+}
+
+@font-face {
+    font-family: "Questa Sans Black";
+    src: url("../fonts/QuestaSans-Black.otf");
+}
+
+.slidev-layout {
+    /* background-color: black; */
+    @apply dark: bg-black bg-white
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Questa Sans Black"
+}
+
+h1 {
+    @apply underline;
+    text-decoration-color: #76d8cf;
+    text-underline-offset: 6px;
+}
+
+p,
+span,
+li {
+    font-family: "Questa Sans Regular";
+}
