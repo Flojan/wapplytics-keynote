@@ -11,9 +11,8 @@ info: |
 drawings:
   persist: false
 css: windicss
-# fonts:
-#   qs-black: QuestaSans-Black
-#   qs-reg: QuestaSans-Regular
+fonts:
+  provider: 'none'
 title: Website-Analyse-Plattform
 layout: intro
 hideInToc: true
