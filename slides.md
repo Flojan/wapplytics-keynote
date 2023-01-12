@@ -16,6 +16,8 @@ fonts:
 title: Website-Analyse-Plattform
 layout: intro
 hideInToc: true
+routerMode: 'history'
+
 
 ---
 
