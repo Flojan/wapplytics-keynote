@@ -38,8 +38,18 @@ h1 {
     text-underline-offset: 6px;
 }
 
+h4 {
+    @apply underline;
+    text-decoration-color: #76d8cf;
+    text-underline-offset: 2px;
+}
+
 p,
 span,
 li {
     font-family: "Questa Sans Regular";
+}
+
+.slidev-vclick-hidden {
+    display: none;
 }
