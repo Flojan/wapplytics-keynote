@@ -3,11 +3,6 @@ theme: apple-basic
 class: text-left
 highlighter: shiki
 lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
 drawings:
   persist: false
 css: windicss
@@ -17,42 +12,19 @@ title: Website-Analyse-Plattform
 layout: intro
 hideInToc: true
 routerMode: 'history'
+# download: true
 ---
 
 # Website-Analyse-Plattform
-Bachelor-Arbeit 
+## Bachelor-Arbeit 
 
-
-<div class="absolute bottom-10">
-  <span class="font-700">
+<div class="absolute bottom-7">
+  <h2>
     Florian Schmidt // 30.01.2023
-  </span>
+  </h2>
 </div>
 
-<!-- <div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div> -->
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-<style>
-h1 {
-  @apply font-regular
-}  
-</style>
+<Footer />
 
 ---
 title: Inhalt
@@ -61,14 +33,7 @@ hideInToc: true
 # Inhalt 
 <Toc listClass="list-disc" />
 
-<!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
--->
-
-<!--
-Here is another comment.
--->
+<Footer />
 
 ---
 title: Einführung in das Thema
@@ -89,6 +54,7 @@ hideInToc: false
 - Tracking des Website-Nutzers ohne Einwilligung 
 - Übersichlichkeit und einfache Nutzung gewährleisten
 <!-- https://sli.dev/guide/animations.html#click-animations -->
+<Footer />
 
 ---
 title: Einführung in das Thema
@@ -111,7 +77,7 @@ hideInToc: true
 <h4 class="absolute left-45 bottom-40 " v-click>Nutzerpfade</h4>
 <h4 class="absolute left-160 bottom-25" v-click>Standorte</h4>
 <h4 class="absolute left-170 bottom-55" v-click>Geräteinformationen</h4>
-
+<Footer/>
 ---
 title: Einschränkungen durch den Datenschutz
 hideInToc: false
@@ -125,6 +91,7 @@ hideInToc: false
 - ohne Einwilligung findet kein Tracking statt
 - viele Browser & Adblocker blockieren Third-Party-Cookies 
 - Datenschutz ist kein Problem, sondern Grundrecht der Nutzer <!--  -->
+<Footer />
 
 ---
 title: Einschränkungen durch den Datenschutz
@@ -145,6 +112,7 @@ hideInToc: true
 - keine zu extremen Tracking-Methoden <!-- Maus- und Session-Tracking -->
 - Datenverarbeitung und -transfer nur in Ländern mit angemessenem Datenschutzniveau <!-- Google Fonts, als gutes Beispiel. Hier werden beim Laden der Fonts die Nutzerdaten an Google geschickt, d.h. in die USA... deswegen gab es in der Vergangenheit dazu auch so viele Abmahnungen -->
 - keine Weitergabe oder Kombination der Daten <!-- Beispiel man analysiert mit einem Analyse Tools mehrere Websites. Diese Daten müssen getrennt bleiben  -->
+<Footer />
 
 ---
 title: Tracking ohne Einwilligung
@@ -170,6 +138,7 @@ hideInToc: false
 - Verzicht auf Cookies oder sonstiges speichern auf dem Gerät des Nutzers möglich
 - Kein expliziter Zugriff auf das Gerät des Nutzers
 <!-- zwei Möglichkeiten diese Methode umzusetzen -->
+<Footer />
 
 ---
 title: Tracking ohne Einwilligung
@@ -183,6 +152,7 @@ hideInToc: true
 - IP-Adresse muss zuvor erst anonymisiert werden
 - Generierung eines Hashwertes
 <!-- Falls die Website-Analyse nicht ohne Personenbezug stattfinden kann, bietet die DSGVO, die Möglichkeit, die Einwilligung zu umgehen  -->
+<Footer />
 
 ---
 title: Tracking ohne Einwilligung
@@ -218,7 +188,7 @@ hideInToc: true
     </ul>
   </div>
 </div>
-
+<Footer />
 
 ---
 title: Tracking ohne Einwilligung
@@ -233,29 +203,40 @@ hideInToc: true
 - unabhängig von First- oder Third-Party-Request
 - First-Party-Requests sollten bevorzugt werden
 - Hosting auf Subdomain
-
-
+<Footer />
 
 ---
 title: Aufbau der Plattform
 hideInToc: false
 ---
 # Aufbau der Plattform
+
+<Footer />
+
 ---
 title: Technischer Ablauf
 hideInToc: false
 ---
 # Technischer Ablauf
+
+<Footer />
+
 ---
 title: Tech-Stack
 hideInToc: false
 ---
 # Tech-Stack
+
+<Footer />
+
 ---
 title: Fazit und Ausblick
 hideInToc: false
 ---
 # Fazit und Ausblick
+
+<Footer />
+
 
 
 
