@@ -63,9 +63,9 @@ hideInToc: true
 # Einführung in das Thema
 ## Ziel mit passenden Key Performance Indikatoren
 
-- kontinuierliche Erfolgskontrolle
 - Analyse-Tool enthält viele verschiedene Performance Indikatoren
 - Key Performance Indikator tragen zur Zielerreichung bei 
+- kontinuierliche Erfolgskontrolle
 ### Perfomance Indikatoren
 
 <h4 class="absolute left-20 bottom-55" v-click>Seitenaufrufe</h4>
@@ -76,7 +76,9 @@ hideInToc: true
 <h4 class="absolute left-30 bottom-20" v-click>Durchschnittliche Verweildauer</h4>
 <h4 class="absolute left-45 bottom-40 " v-click>Nutzerpfade</h4>
 <h4 class="absolute left-160 bottom-25" v-click>Standorte</h4>
-<h4 class="absolute left-170 bottom-55" v-click>Geräteinformationen</h4>
+<h4 class="absolute left-170 bottom-57" v-click>Geräteinformationen</h4>
+<h4 class="absolute left-105 bottom-10" v-click>Erfolgreiche Event Klicks</h4>
+<h4 class="absolute left-180 bottom-40" v-click>Erfolgreiche Event Klickrate </h4>
 <Footer/>
 ---
 title: Einschränkungen durch den Datenschutz
@@ -126,11 +128,11 @@ hideInToc: false
 <div class="mt-3 w-full">
   <img src="/images/CookieBanner-Nudging.png" /> 
 </div>
-<div v-click class="flex justify-between mt-2 mb-6">
-  <span class="flex w-full justify-center">100 %</span> 
-  <span class="flex w-full justify-center">30 %</span> 
-  <span class="flex w-full justify-center">23 %</span> 
-  <span class="flex w-full justify-center">14 %</span> 
+<div class="flex justify-between mt-2 mb-6">
+  <span v-click class="flex w-full justify-center">100 %</span> 
+  <span v-click class="flex w-full justify-center">30 %</span> 
+  <span v-click class="flex w-full justify-center">23 %</span> 
+  <span v-click class="flex w-full justify-center">14 %</span> 
 </div>
 
 ### Page-Tagging-Methode
@@ -147,9 +149,20 @@ hideInToc: true
 # Tracking ohne Einwilligung
 ## ohne Personenbezug
 - Daten die automatisch beim Aufruf mitgeliefert werden
-- Bsp. IP-Adresse, Referrer, UserAgent
+- Bsp. Referrer, UserAgent, IP-Adresse
 - Referrer & UserAgent stellen keinen Personenbezug dar
-- IP-Adresse muss zuvor erst anonymisiert werden
+- IP-Adresse verwendbar nach Anonymisierung
+<br/>
+<br/>
+<br/>
+
+<h2 v-click-hide class="absolute left-20 bottom-62">185.209.196.17</h2>
+<h2 v-after class="absolute left-20 bottom-62">185.209.196.0</h2>
+<h2 v-click class="bg-white dark:bg-black absolute left-20 bottom-62">2a03:1b20:6:f011::a02e</h2>
+<h2 v-click class="w-full bg-white dark:bg-black absolute left-20 bottom-62">2a03:1b20:6:f011::0</h2>
+
+
+- Wiedererkennbarkeit, aber keine identifizierung
 - Generierung eines Hashwertes
 <!-- Falls die Website-Analyse nicht ohne Personenbezug stattfinden kann, bietet die DSGVO, die Möglichkeit, die Einwilligung zu umgehen  -->
 <Footer />
@@ -203,6 +216,26 @@ hideInToc: true
 - unabhängig von First- oder Third-Party-Request
 - First-Party-Requests sollten bevorzugt werden
 - Hosting auf Subdomain
+
+
+---
+title: Zielgruppe
+hideInToc: false
+---
+# Zielgruppe
+
+- Website-Betreiber, die ohne Cookies und Einwilligungspflicht analysieren möchten
+- Datenschutz fokusiert
+- mögen moderne, intuitive und internationalisierte Benutzungsoberfläche
+- benötigen keine analytischen Vorkenntnisse 
+<br/>
+<br/>
+
+### Unternehmen & Einzelpersonen
+
+- Analyse der Website, inkl. Subdomains
+- Vermeidung von verschiedenen Top-Level-Domains
+
 <Footer />
 
 ---
@@ -210,6 +243,95 @@ title: Aufbau der Plattform
 hideInToc: false
 ---
 # Aufbau der Plattform
+## Sitemap
+
+<div class="mt-5 w-full">
+  <img class="dark:hidden" src="/images/sitemap.png" /> 
+  <img class="dark:visible" src="/images/sitemap-dark.png" /> 
+</div>
+
+<Footer />
+
+---
+title: Aufbau der Plattform
+hideInToc: true
+---
+# Aufbau der Plattform
+## Übersicht der Websites
+
+<div class="mt-0 w-11/12">
+  <img src="/images/overview.png" /> 
+</div>
+
+<Footer />
+
+---
+title: Aufbau der Plattform
+hideInToc: true
+---
+# Aufbau der Plattform
+## Dashboard - Detailansicht
+
+<div class="mt-0 w-11/12">
+  <img src="/images/website-detail.png" /> 
+</div>
+
+<Footer />
+
+---
+title: Aufbau der Plattform
+hideInToc: true
+---
+# Aufbau der Plattform
+## Einstellungen der Plattform - Websites
+
+<div class="mt-0 w-11/12">
+  <img src="/images/settings-websites.png" /> 
+</div>
+
+<Footer />
+
+---
+title: Aufbau der Plattform
+hideInToc: true
+---
+# Aufbau der Plattform
+## Einstellungen der Plattform - Nutzerverwaltung
+
+<div class="mt-0 w-11/12">
+  <img src="/images/settings-accountmanagement.png" /> 
+</div>
+
+<Footer />
+
+---
+title: Aufbau der Plattform
+hideInToc: true
+---
+# Aufbau der Plattform
+## Einstellungen der Plattform - Profil
+
+<div class="mt-0 w-11/12">
+  <img src="/images/settings-profile.png" /> 
+</div>
+
+<Footer />
+
+---
+title: Kacheltypen
+hideInToc: false
+---
+# Kacheltypen
+
+<Footer />
+
+---
+title: Kacheltypen
+hideInToc: true
+---
+# Kacheltypen
+
+- Präsentation der Analysedaten
 
 <Footer />
 
