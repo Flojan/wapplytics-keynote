@@ -20,7 +20,7 @@ routerMode: 'history'
 
 <div class="absolute bottom-7">
   <h2>
-    Florian Schmidt // 30.01.2023
+    Florian Schmidt // 31.01.2023
   </h2>
 </div>
 
@@ -373,8 +373,8 @@ hideInToc: false
 # Technischer Ablauf
 ## vom Skript zur Datenbank
 <div class="absolute z-10 right-5">
-  <img class="w-110 dark:hidden block" src="/images/architecture-services.png" /> 
-  <img class="w-110 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+  <img class="w-100 dark:hidden block" src="/images/architecture-services.png" /> 
+  <img class="w-100 hidden dark:block" src="/images/architecture-services-dark.png" /> 
 </div>
 
 - Frontend, Backend, Datenbank
@@ -398,9 +398,9 @@ hideInToc: false
 <Footer />
 
 <style>
-pre {
-  @apply bg-white dark:bg-black
-}
+  .slidev-code-wrapper pre {
+    @apply bg-white dark:bg-black
+  }
 </style>
 
 ---
@@ -410,17 +410,25 @@ hideInToc: true
 # Technischer Ablauf
 ## von Datenbank zur Kachel im Frontend
 <div class="absolute z-10 right-5">
-  <img class="w-110 dark:hidden block" src="/images/architecture-services.png" /> 
-  <img class="w-110 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+  <img class="w-100 dark:hidden block" src="/images/architecture-services.png" /> 
+  <img class="w-100 hidden dark:block" src="/images/architecture-services-dark.png" /> 
 </div>
 
+```html
+<Tile website_id={id} user_id={id} tile ="smalltext" indicator="country" i18n="true" />
+```
+
+- DeployData-Service stellt API-Schnittstelle bereit
+- Request-Query sorgt für passenden Funktionsaufruf
+- Datenbankabfrage mit Prisma und gleichzeitige Berechnung
+- Rückgabewert ist ein Array im gewünschten Format 
 
 <Footer />
 
 <style>
-pre {
-  @apply bg-white dark:bg-black
-}
+  .slidev-code-wrapper pre {
+    @apply bg-white dark:bg-black
+  }
 </style>
 
 ---
@@ -448,5 +456,29 @@ title: Fazit und Ausblick
 hideInToc: false
 ---
 # Fazit und Ausblick
+<!-- ### Ziel der Bachelor-Arbeit --> 
+### Guter Prototyp für weitere Entwicklungen
+- Datenschutzkonforme Website-Analyse-Plattform
+- Tracking ohne Einwilligung des Nutzers
+- beliebig viele Websites in anpassbaren Zeitspannen und Zeitzonen
+- Analysedaten werden kontinuierlich aktualisiert
+- Fokus auf Nutzerfreundlichkeit und Usability
+- Universal Kachel-Komponente für alle Performance Indikatoren
+### Ausblick
+- Erweiterung der Kacheltypen und Gruppierung der Kacheln
+- Kacheleinstellungen zum Anpassen der Darstellung
+- Individualisierung der Plattform erweitern
+- Hybride Trackingvariante
 
 <Footer />
+
+---
+title: Live-Demo
+hideInToc: true
+layout: section
+---
+# Live-Demo
+<div class="absolute z-10 top-1/10 -right-20">
+  <img class="w-150 dark:hidden block" src="/images/wapplytics-dark.png" /> 
+  <img class="w-150 hidden dark:block" src="/images/wapplytics-light.png" /> 
+</div>
