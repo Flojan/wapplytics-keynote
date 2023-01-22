@@ -1,8 +1,8 @@
 ---
 theme: apple-basic
 class: text-left
-highlighter: shiki
-lineNumbers: false
+highlighter: prism
+lineNumbers: true
 drawings:
   persist: false
 css: windicss
@@ -77,8 +77,9 @@ hideInToc: true
 <h4 class="absolute left-45 bottom-40 " v-click>Nutzerpfade</h4>
 <h4 class="absolute left-160 bottom-25" v-click>Standorte</h4>
 <h4 class="absolute left-170 bottom-57" v-click>Geräteinformationen</h4>
-<h4 class="absolute left-105 bottom-10" v-click>Erfolgreiche Event Klicks</h4>
-<h4 class="absolute left-180 bottom-40" v-click>Erfolgreiche Event Klickrate </h4>
+<!-- <h4 class="absolute left-105 bottom-10" v-click>Erfolgreiche Event Klicks</h4>
+<h4 class="absolute left-180 bottom-40" v-click>Erfolgreiche Event Klickrate </h4> -->
+
 <Footer/>
 ---
 title: Einschränkungen durch den Datenschutz
@@ -217,6 +218,7 @@ hideInToc: true
 - First-Party-Requests sollten bevorzugt werden
 - Hosting auf Subdomain
 
+<Footer />
 
 ---
 title: Zielgruppe
@@ -246,8 +248,8 @@ hideInToc: false
 ## Sitemap
 
 <div class="mt-5 w-full">
-  <img class="dark:hidden" src="/images/sitemap.png" /> 
-  <img class="dark:visible" src="/images/sitemap-dark.png" /> 
+  <img class="dark:hidden block" src="/images/sitemap.png" /> 
+  <img class="dark:block hidden" src="/images/sitemap-dark.png" /> 
 </div>
 
 <Footer />
@@ -270,7 +272,7 @@ title: Aufbau der Plattform
 hideInToc: true
 ---
 # Aufbau der Plattform
-## Dashboard - Detailansicht
+## Dashboard
 
 <div class="mt-0 w-11/12">
   <img src="/images/website-detail.png" /> 
@@ -283,7 +285,7 @@ title: Aufbau der Plattform
 hideInToc: true
 ---
 # Aufbau der Plattform
-## Einstellungen der Plattform - Websites
+## Einstellungen der Websites
 
 <div class="mt-0 w-11/12">
   <img src="/images/settings-websites.png" /> 
@@ -296,7 +298,7 @@ title: Aufbau der Plattform
 hideInToc: true
 ---
 # Aufbau der Plattform
-## Einstellungen der Plattform - Nutzerverwaltung
+## Einstellungen der Nutzer
 
 <div class="mt-0 w-11/12">
   <img src="/images/settings-accountmanagement.png" /> 
@@ -309,7 +311,7 @@ title: Aufbau der Plattform
 hideInToc: true
 ---
 # Aufbau der Plattform
-## Einstellungen der Plattform - Profil
+## Einstellungen des Profil
 
 <div class="mt-0 w-11/12">
   <img src="/images/settings-profile.png" /> 
@@ -318,20 +320,49 @@ hideInToc: true
 <Footer />
 
 ---
-title: Kacheltypen
-hideInToc: false
+title: Aufbau der Plattform
+hideInToc: true
 ---
-# Kacheltypen
+# Aufbau der Plattform
+## Kacheltypen
+
+- Präsentation der Analysedaten
+- beinhalten Texte, Zahlen, Diagramme/Grafiken
+- Kacheltypen sind für alle Performance Indikatoren geeignet
+<div class="absolute bottom-8">
+  <img  class="max-w-14/30" src="/images/desktop-detailview.png" /> 
+</div>
 
 <Footer />
 
 ---
-title: Kacheltypen
+title: Aufbau der Plattform
 hideInToc: true
 ---
-# Kacheltypen
-
-- Präsentation der Analysedaten
+# Aufbau der Plattform
+## Kacheltypen
+<div class="">
+  <h3>LiveData-Kachel</h3>
+  <img class="w-30" src="/images/tile-liveuser.png" /> 
+</div>
+<div class="grid grid-cols-2 gap-x-6 w-4/5">
+  <div class="">
+    <h3>MultiData-Kachel</h3>
+    <img class="w-100" src="/images/tile-multipis.png" /> 
+  </div>
+  <div class="">
+    <h3>SmallText-/SmallChart-Kachel</h3>
+    <img class="w-100" src="/images/tile-halfwidth.png" /> 
+  </div>
+  <div class="">
+    <h3>BigChart-Kachel</h3>
+    <img class="w-100" src="/images/tile-locationmap.png" /> 
+  </div>
+  <div class="">
+    <h3>GoalProgress-Kachel</h3>
+    <img class="w-100" src="/images/tile-goalprogress.png" /> 
+  </div>
+</div>
 
 <Footer />
 
@@ -340,14 +371,75 @@ title: Technischer Ablauf
 hideInToc: false
 ---
 # Technischer Ablauf
+## vom Skript zur Datenbank
+<div class="absolute z-10 right-5">
+  <img class="w-110 dark:hidden block" src="/images/architecture-services.png" /> 
+  <img class="w-110 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+</div>
+
+- Frontend, Backend, Datenbank
+- Website-Nutzer triggert TrackingData-Skript
+- Daten werden an Backend gesendet
+- Backend verifiziert Daten und speichert sie in Datenbank
+```json
+{
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS ...",
+  "touchpoints": { "maxTouchPoints": 0 },
+  "os": "MacIntel",
+  "screen": { "width": 2560, "height": 1440 },
+  "language": "en−GB",
+  "referrer ": "https://duckduckgo.com/",
+  "website": "example.de",
+  "path": "/",
+  "identifier ": "yMt0DNtgSJ"
+}
+```
 
 <Footer />
+
+<style>
+pre {
+  @apply bg-white dark:bg-black
+}
+</style>
+
+---
+title: Technischer Ablauf
+hideInToc: true
+---
+# Technischer Ablauf
+## von Datenbank zur Kachel im Frontend
+<div class="absolute z-10 right-5">
+  <img class="w-110 dark:hidden block" src="/images/architecture-services.png" /> 
+  <img class="w-110 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+</div>
+
+
+<Footer />
+
+<style>
+pre {
+  @apply bg-white dark:bg-black
+}
+</style>
 
 ---
 title: Tech-Stack
 hideInToc: false
 ---
 # Tech-Stack
+- Next.js im Frontend sowie Backend
+- MySQL als Datenbank
+- Prisma für Datenbankzugriff 
+- Styling mit Tailwind CSS
+- kleinere Bibliotheken:
+<li>tremor - Diagramme/Grafiken</li>
+<li>headless UI - Dropdowns/Popups</li>
+<li>request-ip - Filterung der IP-Adresse</li> 
+<li>geolite2-redist - Ermittlung des Landes</li> 
+<li>luxon - Verarbeitung der Zeitangaben</li> 
+<li>next-auth - Authentifizierung</li> 
+<li>next-i18next - Internationalisierung</li> 
 
 <Footer />
 
@@ -358,7 +450,3 @@ hideInToc: false
 # Fazit und Ausblick
 
 <Footer />
-
-
-
-
