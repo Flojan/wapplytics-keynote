@@ -422,6 +422,7 @@ hideInToc: true
 title: Aufbau der Plattform
 hideInToc: true
 ---
+
 # Aufbau der Plattform
 ## Dashboard
 
@@ -431,10 +432,20 @@ hideInToc: true
 
 <Footer />
 
+<!--
+- Kommen wir zum sog. Dashboard, also die einzelnen Website-Analysen
+- hier sehen wir direkt, dass das Dashboard, die gleiche Kachel beinhaltet, welche wir gerade auf der Übersichtsseite gesehen haben 
+- gefolgt von weiteren anderen Kacheln, die ich noch vorstellen werde
+- damit das Dashboard dynamisch bleibt und für verschiedene Anwendungsfälle anpassbar ist, können über den Button rechts oben, die Seite angepasst werden
+- zum einen sollen die Kacheln hinzugefügt oder entfernt werden können
+- zum anderen kann man hierüber den Zeitraum auswählen, für den die Daten angezeigt werden sollen
+-->
+
 ---
 title: Aufbau der Plattform
 hideInToc: true
 ---
+
 # Aufbau der Plattform
 ## Einstellungen der Websites
 
@@ -444,10 +455,23 @@ hideInToc: true
 
 <Footer />
 
+<!--
+- Nun kommen wir zu den Einstellungen der Websites, worauf nur Administratoren Zugriff haben
+- hierbei werden die Websites angezeigt, die ein Admin hinzugefügt hat
+- und jede Zeile hat dann noch einmal 5 Button, die ich jetzt von links nach rechts durchgehen werde
+- über den ersten Button erhält man den Tracking-Code, den man auf der Website einbindet, damit die Daten extrahiert werden können
+- über den zweiten Button gelangt man auf die zu analysierende Website
+- der dritte Button lässt es zu, den Titel oder die URL der Website zu ändern
+- der vierte Button löscht die Analysedaten einer Website
+- und der fünfte Button löscht die Website komplett
+- über den Button rechts oben, lässt sich dann noch eine neue Website hinzufügen
+-->
+
 ---
 title: Aufbau der Plattform
 hideInToc: true
 ---
+
 # Aufbau der Plattform
 ## Einstellungen der Nutzer
 
@@ -457,10 +481,19 @@ hideInToc: true
 
 <Footer />
 
+<!--
+- Nun kommen wir zu den Einstellungen der Nutzerverwaltung, worauf auch nur Administratoren Zugriff haben
+- hierbei erhält man auch eine Liste aller Nutzer, die ein Admin hinzugefügt hat
+- und diese Ansicht ist auch sehr ähnlich aufgebaut, wie die Ansicht der Websites
+- man kann den Nutzer bearbeiten oder löschen
+- und über den Button rechts oben, lässt sich dann noch ein neuer Nutzer hinzufügen
+-->
+
 ---
 title: Aufbau der Plattform
 hideInToc: true
 ---
+
 # Aufbau der Plattform
 ## Einstellungen des Profil
 
@@ -470,26 +503,42 @@ hideInToc: true
 
 <Footer />
 
+<!--
+- Nun kommen wir zu den Einstellungen des eigenen Profils, worauf jeder angemeldete Nutzer Zugriff drauf hat
+- hierbei kann der Nutzer die Zeitzone, die Sprache, den Betrachtungszeitraum und das Theme der Plattform ändern
+- außerdem kann er auch selbst das Passwort anpassen und sein Konto löschen
+-->
+
 ---
 title: Aufbau der Plattform
 hideInToc: true
 ---
+
 # Aufbau der Plattform
 ## Kacheltypen
 
 - Präsentation der Analysedaten
 - beinhalten Texte, Zahlen, Diagramme/Grafiken
-- Kacheltypen sind für alle Performance Indikatoren geeignet
+- Kacheltypen sind für bestimmte Performance Indikatoren geeignet
 <div class="absolute bottom-8">
   <img  class="max-w-14/30" src="/images/desktop-detailview.png" /> 
 </div>
 
 <Footer />
 
+<!--
+- Kommen wir nun zu den Kacheltypen, die hauptsächlich auf dem Dashboard zu finden sind
+- diese Kacheln sind dafür da, die Analysedaten kompakt und übersichtlich zu präsentieren
+- sie bestehen aus Texten, Zahlen und Diagramme/Grafiken 
+- manche Kacheltypen sind für mehrere Performance-Indikatoren geeignet und andere nur für einen
+- und diese werde ich jetzt vorstellen
+-->
+
 ---
 title: Aufbau der Plattform
 hideInToc: true
 ---
+
 # Aufbau der Plattform
 ## Kacheltypen
 <div class="">
@@ -517,10 +566,21 @@ hideInToc: true
 
 <Footer />
 
+<!--
+- die erste Kachel ist die LiveData-Kachel, die für den PI Aktive Nutzer geeignet ist, diese zeigt die aktuelle Anzahl der Nutzer an, die sich seit den letzten 5 Minuten auf der Website befinden
+- unten drunter befindet sich die MultiData-Kachel, die wir schon öfters gesehen haben und diese besteht aus vier festen PIs, dazu gehören die Seitenaufaufrufe, die unterschiedlichen Nutzer, die durchschnittliche Verweildauer und die Absprungrate; Als Balkendiagramm werden die Seitenaufrufe zum gewählten Zeitraum dargestellt
+- was vielleicht etwas schwierig zu sehen ist, das unter Zahl in so einem kompakten Quadrat noch eine farbige Zahl steht die den verlust oder zugewinn zum Zeitraum anzeigt
+- die nächste Kachel ist die SmallText-/SmallChart-Kachel, die nur halbe Breite einnehmen und diese sind für bsp. die PIs Traffic-Quellen, Standorte, Geräteinformationen oder auch Nutzerpfade geeignet
+- wie der Name schon sagt, besteht diese entweder aus mehreren Zeilen von Texten oder aus einem kleinen KreisDiagramm
+- die BigChart-Kachel ist besonders gut für den PI Standorte geeignet, da hier die Karte der Welt mit den Standorten der Nutzer dargestellt wird, zusätzlich dazu stehen rechts oben noch die Zahlen der Nutzer pro Land
+- und die letzte Kachel ist die GoalProgress-Kachel, wobei man hier die Ziele der Website einstellen kann und diese in Prozent angezeigt bekommt
+-->
+
 ---
 title: Technischer Ablauf
 hideInToc: false
 ---
+
 # Technischer Ablauf
 ## vom Skript zur Datenbank
 <div class="absolute z-10 right-5">
@@ -528,7 +588,7 @@ hideInToc: false
   <img class="w-100 hidden dark:block" src="/images/architecture-services-dark.png" /> 
 </div>
 
-- Frontend, Backend, Datenbank
+- User, Backend, Datenbank
 - Website-Nutzer triggert TrackingData-Skript
 - Daten werden an Backend gesendet
 - Backend verifiziert Daten und speichert sie in Datenbank
@@ -553,6 +613,13 @@ hideInToc: false
     @apply bg-white dark:bg-black
   }
 </style>
+
+<!--
+- Jetzt werde ich den technischen Ablauf vom User über das Backend zur Datenbank erklären
+- Der Website-Betreiber platziert das TrackingData-Skript auf seiner Website im Head-Tag
+- und dieses wird bei jedem Seitenaufruf ausgeführt und sendet die Daten an das Backend
+- Die Daten kommen dann so, wie hier im JSON zu sehen, im Backend an und werden dort verifiziert und in der Datenbank gespeichert
+-->
 
 ---
 title: Technischer Ablauf
