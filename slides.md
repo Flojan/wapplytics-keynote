@@ -66,7 +66,7 @@ hideInToc: false
 
 - Datenschutzfreundliche und dynamische Website-Analyse-Plattform entwickeln
 - Tracking des Website-Nutzers ohne Einwilligung 
-- Übersichlichkeit und einfache Nutzung gewährleisten
+- Übersichtlichkeit und einfache Nutzung gewährleisten
 <!-- https://sli.dev/guide/animations.html#click-animations -->
 <Footer />
 
@@ -94,14 +94,14 @@ hideInToc: true
 ### Performance Indikatoren
 
 <h4 class="absolute left-20 bottom-55" v-click>Seitenaufrufe</h4>
-<h4 class="absolute left-60 bottom-60" v-click>Aktive User</h4>
+<h4 class="absolute left-60 bottom-60" v-click>Aktive Nutzer</h4>
 <h4 class="absolute left-90 bottom-35" v-click>Unterschiedliche Nutzer</h4>
 <h4 class="absolute left-130 bottom-50" v-click>Traffic-Quellen</h4>
-<h4 class="absolute left-100 bottom-65" v-click>Absprungrate</h4>
-<h4 class="absolute left-30 bottom-20" v-click>Durchschnittliche Verweildauer</h4>
 <h4 class="absolute left-45 bottom-40 " v-click>Nutzerpfade</h4>
 <h4 class="absolute left-160 bottom-25" v-click>Standorte</h4>
 <h4 class="absolute left-170 bottom-57" v-click>Geräteinformationen</h4>
+<h4 class="absolute left-100 bottom-65" v-click>Absprungrate</h4>
+<h4 class="absolute left-30 bottom-20" v-click>Durchschnittliche Verweildauer</h4>
 <!-- <h4 class="absolute left-105 bottom-10" v-click>Erfolgreiche Event Klicks</h4>
 <h4 class="absolute left-180 bottom-40" v-click>Erfolgreiche Event Klickrate </h4> -->
 
@@ -126,19 +126,21 @@ hideInToc: true
 -->
 
 ---
-title: Einschränkungen durch den Datenschutz
-hideInToc: false
+title: Einführung in das Thema
+hideInToc: true
 ---
 
-# Einschränkungen durch den Datenschutz
+# Einführung in das Thema
+
+## Einschränkungen durch den Datenschutz
 
 - DSGVO – schützt die personenbezogenen Daten
-- TTDSG – legt die Einwilligungpflicht fest
+- TTDSG – legt die Einwilligungspflicht fest
 - DSGVO & TTDSG erschweren flächendeckendes Tracking
-- weitverbreiteste Variante – Nutzerdaten in Cookies speichern
+- weitverbreitetste Variante – Nutzerdaten in Cookies speichern
 - ohne Einwilligung findet kein Tracking statt
 - viele Browser & Adblocker blockieren Third-Party-Cookies 
-- Datenschutz ist kein Problem, sondern Grundrecht der Nutzer <!--  -->
+- Datenschutz ist kein Problem, sondern Grundrecht der Nutzer 
 <Footer />
 
 <!--
@@ -153,13 +155,12 @@ hideInToc: false
 -->
 
 ---
-title: Einschränkungen durch den Datenschutz
+title: Einführung in das Thema
 hideInToc: true
 ---
 
-# Einschränkungen durch den Datenschutz
-
-- Ab wann kann auf die Einwilligung verzichtet werden?
+# Einführung in das Thema
+## Ab wann kann auf die Einwilligung verzichtet werden?
 <br/>
 <br/>
 
@@ -187,14 +188,15 @@ hideInToc: true
 -->
 
 ---
-title: Tracking ohne Einwilligung
-hideInToc: false
+title: Einführung in das Thema
+hideInToc: true
 ---
 
-# Tracking ohne Einwilligung
+# Einführung in das Thema
+## Tracking ohne Einwilligung
 
 - Vermeidung von 86 % Datenverlust <!-- denn nur 14 % akzeptieren bei einem rechtskonformen Cookie-Banner das Tracking: laut einer Studie eines Web-Analyse-Anbieters (2021) etracker -->
-- ca. doppelt so viele akzeptieren das Tracking bei rechtswidgrigen Nudging Techniken
+- ca. doppelt so viele akzeptieren das Tracking bei rechtswidrigen Nudging Techniken
 
 <div class="mt-3 w-full">
   <img src="/images/CookieBanner-Nudging.png" /> 
@@ -208,7 +210,7 @@ hideInToc: false
 
 ### Page-Tagging-Methode
 - JavaScript Code, welcher beim Aufruf der Website ausgeführt wird
-- Verzicht auf Cookies oder sonstiges speichern auf dem Gerät des Nutzers möglich
+- Verzicht auf Cookies oder sonstiges Speichern auf dem Gerät des Nutzers möglich
 - Kein expliziter Zugriff auf das Gerät des Nutzers
 <!-- zwei Möglichkeiten diese Methode umzusetzen -->
 <Footer />
@@ -223,13 +225,12 @@ hideInToc: false
 -->
 
 ---
-title: Tracking ohne Einwilligung
+title: Einführung in das Thema
 hideInToc: true
 ---
-
-# Tracking ohne Einwilligung
-## ohne Personenbezug
-- Daten die automatisch beim Aufruf mitgeliefert werden
+# Einführung in das Thema
+## Tracking ohne Einwilligung – ohne Personenbezug
+- Daten, die automatisch beim Aufruf mitgeliefert werden
 - Bsp. Referrer, UserAgent, IP-Adresse
 - Referrer & UserAgent stellen keinen Personenbezug dar
 - IP-Adresse verwendbar nach Anonymisierung
@@ -242,7 +243,7 @@ hideInToc: true
 <h2 v-click class="bg-white dark:bg-black absolute left-20 bottom-62">2a02:810b:f3f:ea90:897d:19ee:5c6d:ff91</h2>
 <h2 v-click class="w-full bg-white dark:bg-black absolute left-20 bottom-62">2a02:810b:f3f:0:0:0:0:0</h2>
 
-- Wiedererkennbarkeit, aber keine identifizierung
+- Wiedererkennbarkeit, aber keine Identifizierung
 - Generierung eines Hashwertes
 
 <Footer />
@@ -261,34 +262,34 @@ hideInToc: true
 -->
 
 ---
-title: Tracking ohne Einwilligung
+title: Einführung in das Thema
 hideInToc: true
 ---
 
-# Tracking ohne Einwilligung
-## mit vernünftiger Erwartung des Nutzers
+# Einführung in das Thema
+## Tracking ohne Einwilligung – mit vernünftiger Erwartung des Nutzers
 
 - keine Überraschung im gewissen Maße analysiert zu werden
-- unerwartet sind bsp. das Aufzeichnen von Maus-Bewegungen
-- erwartungsgemäß sind bsp. die Analyse der Seitenbesuche oder Aufenthaltsdauer
+- unerwartet sind bspw. das Aufzeichnen von Maus-Bewegungen
+- erwartungsgemäß sind bspw. die Analyse der Seitenbesuche oder Aufenthaltsdauer
 <br/>
 <br/>
 
-### Auflagen der DSGVO
+### Technische Auflagen der DSGVO
 <div class="flex">
-  <div class="flex-column w-1/2">
-    <ul>
-      <li>Auftragsverarbeitungsvertrag</li>
-      <!-- <li>keine Datenweitergabe an Dritte</li>
-      <li>Kombination mit anderen Daten ist untersagt</li>
-      <li>keine persönliche Identifikation</li> -->
-      <li>Widerruf über Datenschutzerklärung</li>
-    </ul>
-  </div>
   <div class="flex-column w-1/2">
     <ul>
       <li>anonymisierte IP-Adresse</li>
       <li>Do-Not-Track berücksichtigen</li>
+      <!-- <li>Auftragsverarbeitungsvertrag</li> -->
+      <!-- <li>keine Datenweitergabe an Dritte</li> -->
+      <!-- <li>Kombination mit anderen Daten ist untersagt</li> -->
+      <li>keine persönliche Identifikation</li>
+      <!-- <li>Widerruf über Datenschutzerklärung</li> -->
+    </ul>
+  </div>
+  <div class="flex-column w-1/2">
+    <ul>
       <!-- <li>keinen Einsatz von Cookies oder ähnlichen</li> -->
       <!-- <li>Datenverarbeitung nur in Europa</li> -->
     </ul>
@@ -310,16 +311,16 @@ hideInToc: true
 -->
 
 ---
-title: Tracking ohne Einwilligung
+title: Einführung in das Thema
 hideInToc: true
 ---
 
-# Tracking ohne Einwilligung
-## Problem mit den Adblockern
+# Einführung in das Thema 
+## Tracking ohne Einwilligung – Problem mit den Adblockern
 
 - Desktop 290 Mio. Menschen
 - mobile Endgeräte 560 Mio. Menschen
-- blockieren standardmäßig namenhafte URLs und Skript-Namen
+- blockieren standardmäßig namhafte URLs und Skript-Namen
 - unabhängig von First- oder Third-Party-Request
 - First-Party-Requests sollten bevorzugt werden
 - Hosting auf Subdomain
@@ -344,7 +345,7 @@ hideInToc: false
 # Zielgruppe
 
 - Website-Betreiber, die ohne Cookies und Einwilligungspflicht analysieren möchten
-- Datenschutz fokusiert
+- Datenschutz fokussiert
 - mögen moderne, intuitive, anpassbare und internationalisierte Benutzungsoberflächen
 - benötigen keine analytischen Vorkenntnisse 
 <br/>
@@ -369,11 +370,11 @@ hideInToc: false
 -->
 
 ---
-title: Aufbau der Plattform
+title: Interaktionskonzept
 hideInToc: false
 ---
 
-# Aufbau der Plattform
+# Interaktionskonzept
 ## Sitemap
 
 <div class="mt-5 w-full">
@@ -395,11 +396,11 @@ hideInToc: false
 -->
 
 ---
-title: Aufbau der Plattform
+title: Interaktionskonzept
 hideInToc: true
 ---
 
-# Aufbau der Plattform
+# Interaktionskonzept
 ## Übersicht der Websites
 
 <div class="mt-0 w-11/12">
@@ -419,11 +420,11 @@ hideInToc: true
 -->
 
 ---
-title: Aufbau der Plattform
+title: Interaktionskonzept
 hideInToc: true
 ---
 
-# Aufbau der Plattform
+# Interaktionskonzept
 ## Dashboard
 
 <div class="mt-0 w-11/12">
@@ -441,87 +442,25 @@ hideInToc: true
 - zum anderen kann man hierüber den Zeitraum auswählen, für den die Daten angezeigt werden sollen
 -->
 
+
+
 ---
-title: Aufbau der Plattform
+title: Interaktionskonzept
 hideInToc: true
 ---
 
-# Aufbau der Plattform
-## Einstellungen der Websites
-
-<div class="mt-0 w-11/12">
-  <img src="/images/settings-websites.png" /> 
-</div>
-
-<Footer />
-
-<!--
-- Nun kommen wir zu den Einstellungen der Websites, worauf nur Administratoren Zugriff haben
-- hierbei werden die Websites angezeigt, die ein Admin hinzugefügt hat
-- und jede Zeile hat dann noch einmal 5 Button, die ich jetzt von links nach rechts durchgehen werde
-- über den ersten Button erhält man den Tracking-Code, den man auf der Website einbindet, damit die Daten extrahiert werden können
-- über den zweiten Button gelangt man auf die zu analysierende Website
-- der dritte Button lässt es zu, den Titel oder die URL der Website zu ändern
-- der vierte Button löscht die Analysedaten einer Website
-- und der fünfte Button löscht die Website komplett
-- über den Button rechts oben, lässt sich dann noch eine neue Website hinzufügen
--->
-
----
-title: Aufbau der Plattform
-hideInToc: true
----
-
-# Aufbau der Plattform
-## Einstellungen der Nutzer
-
-<div class="mt-0 w-11/12">
-  <img src="/images/settings-accountmanagement.png" /> 
-</div>
-
-<Footer />
-
-<!--
-- Nun kommen wir zu den Einstellungen der Nutzerverwaltung, worauf auch nur Administratoren Zugriff haben
-- hierbei erhält man auch eine Liste aller Nutzer, die ein Admin hinzugefügt hat
-- und diese Ansicht ist auch sehr ähnlich aufgebaut, wie die Ansicht der Websites
-- man kann den Nutzer bearbeiten oder löschen
-- und über den Button rechts oben, lässt sich dann noch ein neuer Nutzer hinzufügen
--->
-
----
-title: Aufbau der Plattform
-hideInToc: true
----
-
-# Aufbau der Plattform
-## Einstellungen des Profil
-
-<div class="mt-0 w-11/12">
-  <img src="/images/settings-profile.png" /> 
-</div>
-
-<Footer />
-
-<!--
-- Nun kommen wir zu den Einstellungen des eigenen Profils, worauf jeder angemeldete Nutzer Zugriff drauf hat
-- hierbei kann der Nutzer die Zeitzone, die Sprache, den Betrachtungszeitraum und das Theme der Plattform ändern
-- außerdem kann er auch selbst das Passwort anpassen und sein Konto löschen
--->
-
----
-title: Aufbau der Plattform
-hideInToc: true
----
-
-# Aufbau der Plattform
+# Interaktionskonzept
 ## Kacheltypen
 
 - Präsentation der Analysedaten
 - beinhalten Texte, Zahlen, Diagramme/Grafiken
 - Kacheltypen sind für bestimmte Performance Indikatoren geeignet
-<div class="absolute bottom-8">
-  <img  class="max-w-14/30" src="/images/desktop-detailview.png" /> 
+- Analyse-Daten in bestimmten Format
+  <li>number</li>
+  <li>{number: 15, diff: -10}</li>
+  <li>[ {name: "text", value: 10}, {name: "text", value: 5} ]</li>
+<div class="absolute right-20 bottom-8 w-5/12">
+  <img class="" src="/images/desktop-detailview.png" /> 
 </div>
 
 <Footer />
@@ -535,11 +474,11 @@ hideInToc: true
 -->
 
 ---
-title: Aufbau der Plattform
+title: Interaktionskonzept
 hideInToc: true
 ---
 
-# Aufbau der Plattform
+# Interaktionskonzept
 ## Kacheltypen
 <div class="">
   <h3>LiveData-Kachel</h3>
@@ -577,21 +516,84 @@ hideInToc: true
 -->
 
 ---
-title: Technischer Ablauf
+title: Technisches Konzept
 hideInToc: false
 ---
+# Technische Konzept 
+## Universal Kachel
 
-# Technischer Ablauf
+```html
+<Tile website_id={id} user_id={id} tile ="smalltext" indicator="country" i18n="true" />
+```
+
+- jede Kachel stellt eigene Berechnungsanfrage an API
+<!-- - Request-Query: -->
+```javascript
+`/api/data/${props.website_id}/${props.user_id}/${props.tile}/${props.indicator}/calculate`
+```
+
+- anhand des Kacheltypen wird passende Methode im Backend aufgerufen
+- einfache und komplexe Berechnungen der Performance Indikatoren
+
+- (Durchschnittliche Verweildauer, Absprungrate) 
+- Schnell erweiterbar durch neue Kacheltypen
+- bei einfachen Berechnungen kann vorhandene Methode wiederverwendet werden
+
+<Footer />
+
+<style>
+  .slidev-code-wrapper pre {
+    @apply bg-white dark:bg-black
+  }
+</style>
+
+---
+title: Technisches Konzept
+hideInToc: true
+---
+
+# Technisches Konzept
 ## vom Skript zur Datenbank
-<div class="absolute z-10 right-5">
-  <img class="w-100 dark:hidden block" src="/images/architecture-services.png" /> 
-  <img class="w-100 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+<div v-click-hide class="absolute z-10 right-5">
+  <img class="w-95 dark:hidden block" src="/images/architecture-services.png" /> 
+  <img class="w-95 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+</div>
+<div v-after class="absolute z-10 right-8 bottom-25">
+  <img class="w-85 dark:hidden block" src="/images/architecture-script-to-db.png" /> 
+  <img class="w-85 hidden dark:block" src="/images/architecture-script-to-db-dark.png" /> 
 </div>
 
-- User, Backend, Datenbank
-- Website-Nutzer triggert TrackingData-Skript
-- Daten werden an Backend gesendet
-- Backend verifiziert Daten und speichert sie in Datenbank
+- Nutzer, Backend, Datenbank
+```html
+<script defer data-identifier="yMt0DNtgSJ" src="http://example.de/wapplytics.js"></script>
+```
+
+- TrackingData-Skript startet bei Aufruf der Website
+- Überprüfung, ob Do-Not-Track aktiv ist
+- Browserdaten werden extrahiert und in JSON-Objekt gespeichert
+- Objekt wird an API des VerifyData-Services gesendet
+
+<Footer />
+
+<style>
+  .slidev-code-wrapper pre {
+    @apply bg-white dark:bg-black
+  }
+</style>
+
+---
+title: Technisches Konzept
+hideInToc: true
+---
+
+# Technisches Konzept
+## vom Skript zur Datenbank
+<div class="absolute z-10 right-8 bottom-25">
+  <img class="w-85 dark:hidden block" src="/images/architecture-script-to-db.png" /> 
+  <img class="w-85 hidden dark:block" src="/images/architecture-script-to-db-dark.png" /> 
+</div>
+
+- Verifizierung folgender Daten mit Funktionen des VerifyData-Services
 ```json
 {
   "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS ...",
@@ -605,6 +607,10 @@ hideInToc: false
   "identifier ": "yMt0DNtgSJ"
 }
 ```
+
+- SessionUUID Generierung 
+  <li> WebsiteID, anonymisierter IP, UserAgent, Timestamp und Salt </li>
+- anhand der SessionUUID, wird neue Session & View oder nur eine View erstellt
 
 <Footer />
 
@@ -622,24 +628,30 @@ hideInToc: false
 -->
 
 ---
-title: Technischer Ablauf
+title: Technisches Konzept
 hideInToc: true
 ---
-# Technischer Ablauf
+# Technisches Konzept
 ## von Datenbank zur Kachel im Frontend
-<div class="absolute z-10 right-5">
+<div v-click-hide class="absolute z-10 right-5">
   <img class="w-100 dark:hidden block" src="/images/architecture-services.png" /> 
   <img class="w-100 hidden dark:block" src="/images/architecture-services-dark.png" /> 
 </div>
-
-```html
-<Tile website_id={id} user_id={id} tile ="smalltext" indicator="country" i18n="true" />
-```
+<div v-after class="absolute z-10 right-15 bottom-15">
+  <img class="w-70 dark:hidden block" src="/images/architecture-db-to-frontend.png" /> 
+  <img class="w-70 hidden dark:block" src="/images/architecture-db-to-frontend-dark.png" /> 
+</div>
 
 - DeployData-Service stellt API-Schnittstelle bereit
 - Request-Query sorgt für passenden Funktionsaufruf
-- Datenbankabfrage mit Prisma und gleichzeitige Berechnung
-- Rückgabewert ist ein Array im gewünschten Format 
+```javascript
+`/api/data/${props.website_id}/${props.user_id}/${props.tile}/${props.indicator}/calculate`
+```
+
+- Datenbankabfrage mit Prisma unter Berücksichtigung des Zeitraums
+- einfache Berechnungen finden innerhalb der Abfrage statt
+- andernfalls wird zusätzlich JavaScript verwendet 
+- Rückgabewert passenden Format 
 
 <Footer />
 
@@ -654,7 +666,13 @@ title: Tech-Stack
 hideInToc: false
 ---
 # Tech-Stack
-- Next.js im Frontend sowie Backend
+
+<div class="flex justify-center mt-8">
+  <img class="w-9/12 dark:hidden block" src="/images/techstack.png" /> 
+  <img class="w-9/12 hidden dark:block" src="/images/techstack-dark.png" /> 
+</div>
+
+<!-- - Next.js im Frontend sowie Backend
 - MySQL als Datenbank
 - Prisma für Datenbankzugriff 
 - Styling mit Tailwind CSS
@@ -665,7 +683,7 @@ hideInToc: false
 <li>geolite2-redist - Ermittlung des Landes</li> 
 <li>luxon - Verarbeitung der Zeitangaben</li> 
 <li>next-auth - Authentifizierung</li> 
-<li>next-i18next - Internationalisierung</li> 
+<li>next-i18next - Internationalisierung</li>  -->
 
 <Footer />
 
