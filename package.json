@@ -2,7 +2,7 @@
   "name": "wapplytics-keynote",
   "private": true,
   "scripts": {
-    "build": "slidev --remote=asdfasdf",
+    "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
   },
