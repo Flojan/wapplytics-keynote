@@ -40,9 +40,9 @@ hideInToc: true
 <Footer />
 
 <!--
-- Als Erstes gebe ich einen Überblick über mein Thema und mein angestrebtes Ziel
-- Dann stelle ich die Zielgruppe vor und zeige anhand des Interaktionskonzepts, wie die Website-Analyse-Plattform aufgebaut ist
-- danach zeige ich das technische Konzept und erkläre ein paar Abläufe, wie die einzelnen Instanzen miteinander zusammenarbeiten
+- Als Erstes gebe ich einen Überblick über mein Thema und mein angestrebtes Ziel und gehe hierbei auf die Einschränkungen des Datenschutzes ein
+- Dann zeige ich anhand des Interaktionskonzepts, wie die Website-Analyse-Plattform aufgebaut ist
+- anschließend gehe ich auf das technische Konzept ein und erkläre ein paar Abläufe, wie die einzelnen Instanzen miteinander zusammenarbeiten
 - zum Schluss geh ich auf den verwendeten Tech-Stack ein und gebe ein Fazit und Ausblick zu meiner Arbeit
 -->
 
@@ -109,17 +109,18 @@ hideInToc: true
 - die meisten Analyse-Tools enthalten viele verschiedene Performance Indikatoren und hierbei ist es wichtig, um den Fortschritt der Ziele überprüfen zu können, die richtigen Key Performance Indikatoren zu wählen 
 - diese sollten kontinuierlich überprüft werden, da sie zur Zielerreichung beitragen 
 - die Performance Indikatoren werden also erst Key Performance Indikatoren, wenn sie zur Zielerreichung beitragen
-- Seitenaufrufe: Gesamtzahl der Seitenaufrufe einer Website
-- Aktive Nutzer: Anzahl der Nutzer, die in Echtzeit auf der Website sind
-- Unterschiedliche Nutzer: Im Gegensatz zu den Seitenaufrufen, werden hier nur unterschiedliche Nutzer gezählt
-- Traffic-Quellen: sind verschiedene Kanäle, über die die Website aufgerufen wird. Zum Beispiel Suchmaschinen, Social Media oder andere Websites
+- jetzt blende ich einmal die wichtigsten Performance-Indikatoren ein, welches auch schon meist selbsterklärend sind
+- Seitenaufrufe: (Gesamtzahl der Seitenaufrufe einer Website)
+- Aktive Nutzer: Anzahl, die in Echtzeit auf der Website sind
+- Unterschiedliche Nutzer: (Im Gegensatz zu den Seitenaufrufen, werden hier nur unterschiedliche Nutzer gezählt)
+- Traffic-Quellen: Zum Beispiel Suchmaschinen oder Social Media 
 - Nutzerpfade: welche Seiten werden von den Nutzern am meisten aufgerufen
 - Standorte: woher kommen die Nutzer (aus welchem Land)
-- Geräteinformationen: welche Geräteart, Betriebssystem, Auflösung und die Browserversion werden von den Nutzern verwendet
-- Absprungrate: die Rate beschreibt die Anzahl der Nutzer, die die Website bereits nach einer Seite direkt wieder verlassen
-- durchschnittliche Verweildauer: die durchschnittliche Zeit, die ein Nutzer auf der Website verbringt
+- Geräteinformationen: (welche Geräteart, Betriebssystem, Auflösung und die Browserversion werden von den Nutzern verwendet)
+- Absprungrate: die Anzahl der Nutzer, die die Website bereits nach einer Seite direkt wieder verlassen
+- durchschnittliche Verweildauer: (die durchschnittliche Zeit, die ein Nutzer auf der Website verbringt)
 
-- Beispiel-Ziel: Der Website-Betreiber möchte in den nächsten 6 Monaten 100 Klicks aus Deutschland über Instagram generieren. Hierfür könnten die PIs Traffic-Quellen und Standort als KPIs betrachtet werden.
+- Beispiel-Ziel: Der Website-Betreiber möchte in den nächsten 6 Monaten 100 Nutzer aus Deutschland über Instagram generieren. Hierfür könnten die PIs Traffic-Quellen und Standort als KPIs betrachtet werden.
 -->
 
 ---
@@ -148,7 +149,7 @@ hideInToc: true
 - da die weitverbreitetste Tracking-Methode die Speicherung der Nutzerdaten in Cookies ist
 - kann ohne Einwilligung des Nutzers kein Tracking stattfinden, da Analyse-Cookies keine essentiellen Cookies sind und somit eine Einwilligungspflicht besteht
 - außerdem ist es so, dass viele Browser und Adblocker schon standardmäßig Third-Party-Cookies blockieren, wodurch die Nutzer nicht analysiert werden können
-- man sollte aber nicht vergessen, dass der Datenschutz kein Problem, sondern ein Grundrecht der Nutzer ist
+- man sollte aber nicht vergessen, dass der Datenschutz kein Problem, sondern ein Grundrecht der Nutzer ist und man diesen respektieren sollte
 -->
 
 ---
@@ -166,19 +167,24 @@ hideInToc: true
 - Einsatz von ausschließlich essentiellen Cookies
 - kein Zugriff auf das Endgerät, um Identifikatoren auszulesen
 - Nutzer darf nicht über längeren Zeitraum wieder erkannt werden 
-- keine Identifikation über personenbezogene Daten 
+- keine Identifikation über personenbezogene Daten -> 
 - keine zu extremen Tracking-Methoden 
 - Datenverarbeitung und -transfer nur in Ländern mit angemessenem Datenschutzniveau 
 - keine Weitergabe oder Kombination der Daten 
+
+<h2 v-click-hide class="absolute left-120 bottom-59">185.209.196.17</h2>
+<h2 v-after class="absolute left-120 bottom-59">185.209.196.0</h2>
+<h2 v-click class="bg-white dark:bg-black absolute left-120 bottom-59">2a02:810b:f3f:ea90:897d:19ee:5c6d:ff91</h2>
+<h2 v-click class="w-full bg-white dark:bg-black absolute left-120 bottom-59">2a02:810b:f3f:0:0:0:0:0</h2>
 <Footer />
 
 <!--
 - und wir werden uns jetzt einmal anschauen, ab wann man auf die Einwilligung verzichten kann.
 - hierfür müssen gewissen Voraussetzungen der Datenschutzgesetze erfüllt sein
 - zum einen dürfen ausschließlich essentielle Cookies verwendet werden, damit auf die Einwilligungsbanner verzichtet werden kann
-- es darf nicht explizit auf das Endgerät zugegriffen werden, um Identifikatoren (Geräte-IDs, IMEI-Nummern, MAC-Adressen) auszulesen, sondern nur mit den Daten gearbeitet werden, die der Browser automatisch übermittelt
+- es darf nicht explizit auf das Endgerät zugegriffen werden, um Identifikatoren (Geräte-IDs, MAC-Adressen) auszulesen, sondern nur mit den Daten gearbeitet werden, die der Browser automatisch an den Webserver übermittelt
 - der Nutzer darf nicht über einen längeren Zeitraum wieder erkannt werden, also ab einem gewissen Zeitraum muss der Nutzer als neu angesehen werden
-- es darf keine Identifikation über personenbezogene Daten stattfinden, also IP-Adresse, E-Mail, Name, Anschrift, Telefon, Alter, Geschlecht
+- es darf keine Identifikation über personenbezogene Daten stattfinden, also bspw. IP-Adresse, diese muss dann erst anonymisiert werden ... falls personenbezogene Daten verwendet werden, muss die Browsereinstellung Do-Not-Track des Nutzers berücksichtigt werden
 - es dürfen keine zu extremen Tracking-Methoden verwendet werden, bspw. Maus-Tracking
 - die Datenverarbeitung und -transfer dürfen nur in Ländern mit angemessenem Datenschutzniveau stattfinden, bspw. europäischen Länder, aber z. B. nicht die USA
 - außerdem dürfen die Analysedaten nicht weitergegeben oder mit anderen Daten kombiniert werden) z. B. wenn mehrere Websites in einem Analyse-Tool analysiert werden, dürfen keine Gesamtstatistiken erstellt werden
@@ -220,93 +226,6 @@ hideInToc: true
 - diese Methode besteht aus einem JavaScript Code, welcher beim Aufruf der Website ausgeführt wird
 - hierdurch ist es möglich, auf Cookies oder sonstiges Speichern auf dem Gerät des Nutzers zu verzichten
 - und es findet kein expliziter Zugriff auf das Gerät des Nutzers statt
-- dafür gibt es nun 2 Möglichkeiten das Ganze umzusetzen
--->
-
----
-title: Einführung in das Thema
-hideInToc: true
----
-# Einführung in das Thema
-## Tracking ohne Einwilligung – ohne Personenbezug
-- Daten, die automatisch beim Aufruf mitgeliefert werden
-- Bsp. Referrer, UserAgent, IP-Adresse
-- Referrer & UserAgent stellen keinen Personenbezug dar
-- IP-Adresse verwendbar nach Anonymisierung
-<br/>
-<br/>
-<br/>
-
-<h2 v-click-hide class="absolute left-20 bottom-62">185.209.196.17</h2>
-<h2 v-after class="absolute left-20 bottom-62">185.209.196.0</h2>
-<h2 v-click class="bg-white dark:bg-black absolute left-20 bottom-62">2a02:810b:f3f:ea90:897d:19ee:5c6d:ff91</h2>
-<h2 v-click class="w-full bg-white dark:bg-black absolute left-20 bottom-62">2a02:810b:f3f:0:0:0:0:0</h2>
-
-- Wiedererkennbarkeit, aber keine Identifizierung
-- Generierung eines Hashwertes
-
-<Footer />
-
-<!--
-- Tracking ohne Personenbezug wäre eine Möglichkeit, um eine Einwilligung zu umgehen
-- hierbei werden Daten, die automatisch beim Aufruf mitgeliefert werden, verwendet 
-- das sind beispielsweise der Referrer, der UserAgent oder die IP-Adresse
-- der Referrer ist das englische Wort für Traffic-Quelle, also die Quelle von dem Nutzer, auf die Website kommt
-- und der UserAgent ist ein String, der Informationen über den Browser und das Betriebssystem des Nutzers enthält
-- verwendet man nur diese beiden Daten, stellt es keinen Personenbezug dar und der Nutzer ist über einen bestimmten Zeitraum hinweg wiedererkennbar
-- um die Wiedererkennbarkeit zu erhöhen, kann zusätzlich die IP-Adresse in anonymisierter Form verwendet werden
-- IPv4 & IPv6
-- Die Wiedererkennbarkeit wird dadurch erhöht, aber es findet keine Identifizierung statt
-- ja und daraus wird dann ein Hashwert generiert
--->
-
----
-title: Einführung in das Thema
-hideInToc: true
----
-
-# Einführung in das Thema
-## Tracking ohne Einwilligung – mit vernünftiger Erwartung des Nutzers
-
-- keine Überraschung im gewissen Maße analysiert zu werden
-- unerwartet sind bspw. das Aufzeichnen von Maus-Bewegungen
-- erwartungsgemäß sind bspw. die Analyse der Seitenbesuche oder Aufenthaltsdauer
-<br/>
-<br/>
-
-### Technische Auflagen der DSGVO
-<div class="flex">
-  <div class="flex-column w-1/2">
-    <ul>
-      <li>anonymisierte IP-Adresse</li>
-      <li>Do-Not-Track berücksichtigen</li>
-      <!-- <li>Auftragsverarbeitungsvertrag</li> -->
-      <!-- <li>keine Datenweitergabe an Dritte</li> -->
-      <!-- <li>Kombination mit anderen Daten ist untersagt</li> -->
-      <li>keine persönliche Identifikation</li>
-      <!-- <li>Widerruf über Datenschutzerklärung</li> -->
-    </ul>
-  </div>
-  <div class="flex-column w-1/2">
-    <ul>
-      <!-- <li>keinen Einsatz von Cookies oder ähnlichen</li> -->
-      <!-- <li>Datenverarbeitung nur in Europa</li> -->
-    </ul>
-  </div>
-</div>
-<Footer />
-
-<!--
-- Falls die Website-Analyse nicht ohne Personenbezug stattfinden kann, bietet die DSGVO, immer noch eine Möglichkeit, die Einwilligung trotzdem zu umgehen
-- und zwar, wenn die Analyse des Website-Betreibers, nicht die Erwartungen des Nutzers nicht überschreitet
-- das heißt der Nutzer rechnet schon damit, dass er in einem gewissen Maß analysiert wird
-- aber das heißt nicht, dass er damit rechnet, dass seine Maus-Bewegungen genaustens aufgezeichnet werden
-- sondern er rechnet damit, dass seine Seitenbesuche oder Aufenthaltsdauer analysiert werden
-- Dafür gibt es noch einmal eine Reihe an zusätzlichen Auflagen der DSGVO, die eingehalten werden müssen. Ich gehe jetzt einmal nur auf die technischen Auflagen ein, denn es gibt auch noch weitere für den Website-Betreiber (Auftragsverarbeitungsvertrag, Widerruf über Datenschutzerklärung)
-
-- die IP-Adresse muss anonymisiert werden, da der Nutzer halt nicht identifiziert werden darf
-- und es muss auch noch das Do-Not-Track-Protokoll berücksichtigt werden, welcher der Nutzer in den Browsereinstellungen aktivieren kann
-- der Nutzer darf in keinster Weise identifiziert werden
 -->
 
 ---
@@ -315,7 +234,7 @@ hideInToc: true
 ---
 
 # Einführung in das Thema 
-## Tracking ohne Einwilligung – Problem mit den Adblockern
+## Tracking ohne Einwilligung – weiteres Problem mit den Adblockern
 
 - Desktop 290 Mio. Menschen
 - mobile Endgeräte 560 Mio. Menschen
@@ -327,45 +246,13 @@ hideInToc: true
 <Footer />
 
 <!--
-- Bei dem Tracking ohne Einwilligung gibt es aber ein Problem mit den Adblockern
+- Bei dem Tracking ohne Einwilligung gibt es neben den Einschränkungen durch den Datenschutz, aber auch ein Problem mit den Adblockern
 - Adblocker sind bei vielen Nutzern sehr beliebt, da sie unter anderem Werbung blockieren
 - auf Desktop-Rechnern sind das 290 Millionen Menschen und auf mobilen Endgeräten 560 Millionen Menschen
 - und Adblocker blockieren mittlerweile aber nicht nur Werbung, sondern standardmäßig namhafte URLs und Skript-Namen (bspw. wenn man Google Analytics nutzt wird das Skript von den Google Servern geladen und hierbei kann dann die Domain blockiert sein; oder wenn man die Open Source Analyse Plattform Matomo nutzt und hierbei es sogar selbst hostet, ist die Domain eher nicht das Problem, sondern der bekannte Skript-Name namens piwik.js, welcher dann blockiert wird)
 - und das unabhängig davon, ob es sich um First- oder Third-Party-Requests handelt (weil es halt URLs und Skript-Namen filtert/blockiert)
-- aber First-Party-Requests sollten trotzdem bevorzugt werden, da diese ein besseres Ansehen haben und die Adblocker unterschiedliche Voreinstellungen haben 
-- d. h. die Analyse-Plattform sollte bspw. auf einer Subdomain gehostet werden, um Third-Party-Requests zu vermeiden
--->
-
----
-title: Zielgruppe
-hideInToc: false
----
-
-# Zielgruppe
-
-- Website-Betreiber, die ohne Cookies und Einwilligungspflicht analysieren möchten
-- Datenschutz fokussiert
-- mögen moderne, intuitive, anpassbare und internationalisierte Benutzungsoberflächen
-- benötigen keine analytischen Vorkenntnisse 
-<br/>
-<br/>
-
-### Unternehmen & Einzelpersonen
-
-- Analyse der Website, inkl. Subdomains
-- Vermeidung von verschiedenen Top-Level-Domains
-
-<Footer />
-
-<!--
-- Die Zielgruppe meiner Plattform sind Website-Betreiber, die ohne Cookies und Einwilligungspflicht analysieren möchten
-- und dabei auch noch auf den Datenschutz fokussiert sind
-- außerdem mögen sie moderne, intuitive, anpassbare und internationalisierte Benutzungsoberflächen
-- und ihnen ist es wichtig, dass sie keine analytischen Vorkenntnisse benötigen, also sie müssen keine Marketer sein
-
-- Die Plattform ist für Unternehmen und Einzelpersonen gedacht
-- die bspw. eine Website und vielleicht sogar Websites auf der Subdomain betreiben und diese analysieren möchten
-- wenn sie bspw. unterschiedliche Top-Level-Domains haben, dann sollten sie für jede dieser Domains eine eigene Analyse-Plattform einrichten, damit Third-Party-Requests vermieden werden
+- aber First-Party-Requests sollten trotzdem bevorzugt werden, da diese ein besseres Ansehen haben und verschiedene Adblocker unterschiedlich blockieren 
+- d. h. die Analyse-Plattform sollte bspw. auf einer Subdomain gehostet werden, um Third-Party-Requests zu vermeiden, also die zu analysierende Website liegt dann auf der Hauptdomain
 -->
 
 ---
@@ -412,7 +299,7 @@ hideInToc: true
 - Fangen mit der Start-/Übersichtseite der Websites an
 - und zwar werden hier alle Websites angezeigt, die ein Admin hinzugefügt hat
 - aber nur in einer groben Zusammenfassung, welche 4 verschiedene Performance Indikatoren anzeigt
-- Seitenaufrufe, einzigartige Nutzer, durchschnittliche Verweildauer und die Absprungrate
+- Seitenaufrufe, unterschiedlichen Nutzer, durchschnittliche Verweildauer und die Absprungrate
 - und im Balken Diagramm sind noch einmal die Seitenaufrufe detailierter zu sehen 
 - dieses Konstrukt ist eine von verschiedenen Kacheln, wo ich später noch einmal genauer eingehen werde
 - Sidebar erklären
@@ -467,7 +354,7 @@ hideInToc: true
 - diese Kacheln sind dafür da, die Analysedaten kompakt und übersichtlich zu präsentieren
 - sie bestehen aus Texten, Zahlen und Diagramme/Grafiken 
 - manche Kacheltypen sind für mehrere Performance-Indikatoren geeignet und andere nur für einen
-- und außerdem müssen die Analysedaten in einem bestimmten passend für den Kacheltyp formatiert sein -> Unterpunkte, number; Objekt, Array aus mehreren Objekten
+- und außerdem müssen die Analysedaten in einem bestimmten Format, passend für den Kacheltyp formatiert sein -> Unterpunkte, number; Objekt, Array aus mehreren Objekten
 - und die einzelnen Kacheltypen werde ich jetzt vorstellen
 -->
 
@@ -532,7 +419,6 @@ hideInToc: false
 ```
 
 - anhand des Kacheltypen wird passende Funktion im Backend aufgerufen
-- einfache und komplexe Berechnungen der Performance Indikatoren
 - schnell erweiterbar durch neue Kacheltypen
 
 <Footer />
@@ -544,11 +430,12 @@ hideInToc: false
 </style>
 
 <!--
-- Schauen wir uns das jetzt einmal im technischen Konzept an, und zwar gibt es für die unterschiedlichen Kacheltypen eine Universal Kachel Komponente, bestehend aus verschiedenen Parametern, website_id, user_id, kacheltyp, Performance-Indikator und einen Boolean Wert für die Internationalisierung
+- Schauen wir uns das jetzt einmal im technischen Konzept an, und zwar gibt es für die unterschiedlichen Kacheltypen eine Universal Kachel Komponente, bestehend aus verschiedenen Props, website_id, user_id, kacheltyp, Performance-Indikator und einen Boolean Wert für die Internationalisierung
 - solch eine Kachel stellt eine eigene Berechnungsanfrage an folgende API
 - und anhand des Kacheltypen wird dabei die passende Funktion im Backend aufgerufen
-- und in diesen Funktionen findet dann die Berechnung der Performance Indikatoren statt, meistens direkt bei der Datenbankabfrage, aber bei komplexeren Berechnungen wird zusätzlich Javascript eingesetzt (komplexere Berechnung finden bspw. bei der durchschnittlichen Verweildauer oder Absprungrate statt, da hierbei nicht nur die einzelnen Tabelleneinträge gezählt werden)
-- durch die Universal Kachel Komponente können somit schnell neue Kacheltypen hinzugefügt werden und bei einfachen Berechnungen kann die vorhandene Funktion wiederverwendet werden
+- und in diesen Funktionen findet dann die Berechnung der Performance Indikatoren statt
+- durch die Universal Kachel Komponente können somit schnell neue Kacheltypen hinzugefügt werden 
+- und bei einfachen Berechnungen, wo nur gezählt wird, kann die vorhandene Funktion wiederverwendet werden
 -->
 
 ---
@@ -573,9 +460,9 @@ hideInToc: true
 ```
 
 - TrackingData-Skript startet bei Aufruf der Website
-- Überprüfung, ob Do-Not-Track aktiv ist
-- Browserdaten werden extrahiert und in JSON-Objekt gespeichert
-- Objekt wird an API des VerifyData-Services gesendet
+- Do-Not-Track Überprüfung
+- Browserdaten werden extrahiert
+- Daten werden an API des VerifyData-Services gesendet
 
 <Footer />
 
@@ -584,6 +471,15 @@ hideInToc: true
     @apply bg-white dark:bg-black
   }
 </style>
+
+<!--
+- So, aber ohne Analysedaten bringt uns auch eine Kachel nicht, deswegen schauen wir und jetzt einmal an, wie die Daten vom Skript in der Datenbank landen
+- rechts sehen wir die komplette Architektur der Plattform, aber wir schauen uns jetzt einmal nur den rechten Teil an -> Nutzer, Backend und Datenbank (klick)
+- Also der Website-Betreiber platziert das Skript auf der zu analysierenden Website im Head-Tag mit folgendem Script-Element, bestehend auch data-identifier (eindeutiger Website ID), src (Pfad zum TrackingData-Skript) und dem Attribut defer, damit das Skript so geladen wird, damit es die Verarbeitung der Seite nicht blockiert
+- das TrackingData-Skript startet bei jedem Aufruf der Website im Browser des Nutzers
+- bevor hierbei Daten überhaupt gesammelt werden, wird erst einmal überprüft, ob Do-Not-Track beim Nutzer aktiv ist
+- und falls das nicht der Fall ist, werden die Browserdaten extrahiert und in einem JSON-Objekt gespeichert und anschließend an die API des VerifyData-Services geschickt
+-->
 
 ---
 title: Technisches Konzept
@@ -613,7 +509,7 @@ hideInToc: true
 ```
 
 - SessionUUID Generierung 
-  <li> WebsiteID, anonymisierter IP, UserAgent, Timestamp und Salt </li>
+  <li> WebsiteID, anonymisierter IP, Referrer, UserAgent, Timestamp <br/>und Salt </li>
 - anhand der SessionUUID, wird neue Session & View oder nur eine View erstellt
 
 <Footer />
@@ -625,34 +521,44 @@ hideInToc: true
 </style>
 
 <!--
-- Jetzt werde ich den Ablauf vom User über das Backend zur Datenbank erklären
-- Der Website-Betreiber platziert das TrackingData-Skript auf seiner Website im Head-Tag
-- und dieses wird bei jedem Seitenaufruf ausgeführt und sendet die Daten an das Backend
-- Die Daten kommen dann so, wie hier im JSON zu sehen, im Backend an und werden dort verifiziert und in der Datenbank gespeichert
+- Die Daten kommen dann, wie hier im JSON-Objekt zu sehen, im Backend an und werden dort verifiziert und zuletzt in der Datenbank gespeichert
+- für die Verifizierung werden verschiedene Funktionen des VerifyData-Services aufgerufen und gestartet wird mit dem "identifier", welcher mit der passenden website_id in der Datenbank abgeglichen wird, ob es überhaupt eine gültige Website ist
+- als Nächstes wird mithilfe einer externen Bibliothek die IP-Adresse ermittelt, da diese an vielen verschiedenen Stellen im Request sich befinden kann
+- im Anschluss wird die IP-Adresse, wie vorhin gezeigt, anonymisiert 
+- und eine SessionUUID wird generiert, und zwar aus der WebsiteID, anonymisierter IP, Referrer, UserAgent, einen Timestamp (Jahr und Kalenderwoche) und einen 10-stelligen Salt, um die UUID noch sicherer zu gestalten
+- mithilfe der SessionUUID wird nun in der Datenbank abgeglichen, ob bereits die Session besteht, dann wird nur eine neue View angelegt (also Seitenaufruf) oder falls es ein neuer Nutzer ist, wird eine Session & eine View angelegt
+- in der Session werden folgende Daten gespeichert:
+sessionUUID, website_id, website, language, country, browser, os, device, screen, referrer (country, browser und device, werden mit Funktionen den VerifyData-Services ermitteln
+- und in der View wird von diesen Daten nur der path gespeichert
+
+- ZULETZT: dieser Vorgang wiederholt sich bei jedem Aufruf eines Nutzers
 -->
 
 ---
 title: Technisches Konzept
 hideInToc: true
 ---
+
 # Technisches Konzept
 ## von Datenbank zur Kachel im Frontend
 <div v-click-hide class="absolute z-10 right-5">
-  <img class="w-100 dark:hidden block" src="/images/architecture-services.png" /> 
-  <img class="w-100 hidden dark:block" src="/images/architecture-services-dark.png" /> 
+  <img class="w-95 dark:hidden block" src="/images/architecture-services.png" /> 
+  <img class="w-95 hidden dark:block" src="/images/architecture-services-dark.png" /> 
 </div>
 <div v-after class="absolute z-10 right-15 bottom-15">
   <img class="w-70 dark:hidden block" src="/images/architecture-db-to-frontend.png" /> 
   <img class="w-70 hidden dark:block" src="/images/architecture-db-to-frontend-dark.png" /> 
 </div>
 
-- DeployData-Service stellt API-Schnittstelle bereit
+- Analysedaten befinden sich in der Session- und View-Tabelle
+- Universal Kachel ruft getData(props)-Funktion auf
 - Request-Query sorgt für passenden Funktionsaufruf
 ```javascript
 `/api/data/${props.website_id}/${props.user_id}/${props.tile}/${props.indicator}/calculate`
 ```
 
-- Datenbankabfrage mit Prisma unter Berücksichtigung des Zeitraums
+- Ermittlung der richtigen Datenbanktabelle
+- Datenbankabfrage unter Berücksichtigung <br/>der Zeitspanne und WebsiteID
 - einfache Berechnungen finden innerhalb der Abfrage statt
 - andernfalls wird zusätzlich JavaScript verwendet 
 - Rückgabewert passenden Format 
@@ -665,10 +571,24 @@ hideInToc: true
   }
 </style>
 
+<!--
+- schauen wir uns zuletzt noch den Ablauf an, wie die Daten von der Datenbank zur Kachel kommen ... (klick)
+- also wie wir eben gesehen haben werden die Analysedaten in der Session und View-Tabelle gespeichert, auf die wir jetzt zugreifen müssen
+- und gestartet wird das bei der Universal Kachel, die die getData Funktion aufruft und die Kachel bekommt ja mehrere Props, welche als Parameter übergeben werden
+- diese Funktion sendet einen GET-Request an die API, des DeployData-Services und anhand der Request-Query (grün url) 
+wird die passende Funktion des DeployData-Services für den Kacheltyp aufgerufen und dort findet dann die Berechnung statt
+- aber zuvor muss noch mithilfe des PIs die richtige Datenbank-Tabelle ausgewählt werden, und zwar enthält die View-Tabelle die Analysedaten für die Seitenaufrufe und Nutzerpfade und anderen PIs nutzen die Session-Tabelle
+- anschließend findet die Datenbankabfrage unter Berücksichtigung der WebsiteID & Zeitspanne statt, den man mithilfe der user_id abfragt
+- und bei einfachen Berechnungen findet dann bereits bei der Abfrage die Berechnung statt, weil hierbei nur gezählt wird
+- andernfalls wird zusätzlich JavaScript verwendet, bspw. bei der durchschnittlichen Verweildauer oder Absprungrate, da hierbei zusätzlich neben dem Zählen einfache Rechenregeln stattfinden
+- und zuletzt werden die Daten im passenden Format zurück zur Kachel gegeben
+-->
+
 ---
 title: Tech-Stack
 hideInToc: false
 ---
+
 # Tech-Stack
 
 <div class="flex justify-center mt-8">
@@ -691,6 +611,16 @@ hideInToc: false
 
 <Footer />
 
+<!--
+- Jetzt kommen wir langsam zu Ende
+- Hier seht ihr meinen verwendeten Tech-Stack
+- Ich gehe jetzt einmal nur auf die wichtigsten ein
+- Next.js, was ich im Front- und Backend eingesetzt habe
+- MySQL wurde als Datenbank genutzt 
+- und für die Kommunikation zwischen db und Backend
+habe ich Prisma verwendet
+-->
+
 ---
 title: Fazit und Ausblick
 hideInToc: false
@@ -701,8 +631,6 @@ hideInToc: false
 - Datenschutzkonforme Website-Analyse-Plattform
 - Tracking ohne Einwilligung des Nutzers
 - beliebig viele Websites in anpassbaren Zeitspannen und Zeitzonen
-- Analysedaten werden kontinuierlich aktualisiert
-- Fokus auf Nutzerfreundlichkeit und Usability
 - Universal Kachel-Komponente für alle Performance Indikatoren
 ### Ausblick
 - Erweiterung der Kacheltypen und Gruppierung der Kacheln
