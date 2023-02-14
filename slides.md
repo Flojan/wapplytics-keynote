@@ -12,6 +12,7 @@ title: Website-Analyse-Plattform
 layout: intro
 hideInToc: true
 routerMode: history
+presenter: false
 ---
 
 # Website-Analyse-Plattform
@@ -325,7 +326,7 @@ hideInToc: true
 - gefolgt von weiteren anderen Kacheltypen, die ich gleich noch vorstellen werde
 - damit das Dashboard dynamisch bleibt und für verschiedene Anwendungsfälle anpassbar ist, können über den Button rechts oben, die Seite angepasst werden
 - zum einen sollen die Kacheln hinzugefügt oder entfernt werden können
-- zum anderen kann man hierüber den Zeitraum auswählen, für den die Daten angezeigt werden sollen
+- zum anderen kann man hierüber die Zeitspanne auswählen, für den die Daten angezeigt werden sollen
 -->
 
 ---
@@ -392,7 +393,7 @@ hideInToc: true
 
 <!--
 - die erste Kachel ist die LiveData-Kachel, die für den PI Aktive Nutzer geeignet ist, diese zeigt die aktuelle Anzahl der Nutzer an, die sich seit den letzten 5 Minuten auf der Website befinden (Format einfache number)
-- unten drunter befindet sich die MultiData-Kachel, die wir schon öfters gesehen haben und diese besteht aus vier festen PIs, dazu gehören die Seitenaufaufrufe, die unterschiedlichen Nutzer, die durchschnittliche Verweildauer und die Absprungrate; Als Balkendiagramm werden die Seitenaufrufe zum gewählten Zeitraum dargestellt
+- unten drunter befindet sich die MultiData-Kachel, die wir schon öfters gesehen haben und diese besteht aus vier festen PIs, dazu gehören die Seitenaufaufrufe, die unterschiedlichen Nutzer, die durchschnittliche Verweildauer und die Absprungrate; Als Balkendiagramm werden die Seitenaufrufe zur gewählten Zeitspanne dargestellt
 - was vielleicht etwas schwierig zu sehen ist, dass unter Zahl in so einem kompakten Quadrat noch eine farbige Zahl steht, die den Verlust oder Zugewinn zum Zeitraum anzeigt (2 Formate, einmal das Objekt für die Quadrate und einmal das Array mit mehreren Objekten für das Balkendiagramm)
 - die nächste Kachel ist die SmallText-/SmallChart-Kachel, die nur halbe Breite einnehmen und diese sind für bspw. die PIs Traffic-Quellen, Standorte, Geräteinformationen oder auch Nutzerpfade geeignet
 - wie der Name schon sagt, besteht diese entweder aus mehreren Zeilen von Texten oder aus einem kleinen KreisDiagramm  (Format Array mit mehreren Objekten)
@@ -614,7 +615,7 @@ hideInToc: false
 <!--
 - Jetzt kommen wir langsam zu Ende
 - Hier seht ihr meinen verwendeten Tech-Stack
-- Ich gehe jetzt einmal nur auf die wichtigsten ein
+- (Ich gehe jetzt einmal nur auf die wichtigsten ein)
 - Next.js, was ich im Front- und Backend eingesetzt habe
 - MySQL wurde als Datenbank genutzt 
 - und für die Kommunikation zwischen db und Backend
